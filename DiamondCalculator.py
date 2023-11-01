@@ -1,5 +1,5 @@
 # Caclulate how many levels Nephi needs to obtain "x" many diamonds
-# Calculate what Nephi can do to obtain "x" levels most effectivly
+# Calculate what Nephi can do (shower/sleep/eat) & how many times each to obtain "x" levels most effectivly
 print("Welcome back Nephi!")
 Option = input("how may I assist you today? (Diamonds/Levels): ").lower()
 
