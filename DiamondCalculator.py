@@ -14,7 +14,7 @@ ExperienceNeededPerLevel = 325
 #seperate Diamonds and Levels
 
 #Diamonds breakdown
-if Option == "diamonds":
+if Option == "diamonds" :
     print("Diamonds selected.")
 
 
@@ -93,6 +93,7 @@ if Option == "diamonds":
         ActionChoice = input("Which way do you prefer to gain diamonds? (eat/sleep/bathe): ").lower()
         while Option == "diamonds":
 
+            #need to make it go up to AT LEAST one level when diamonds are small (going to need to add in a level percent system)
             if ActionChoice == "eat":
                 NumberOfFoodItemsNeeded = NumberTimesForEating * 4
                 print(f"{User}, you would need to eat {round(NumberOfFoodItemsNeeded) + 1} food items.")
@@ -114,7 +115,7 @@ if Option == "diamonds":
 
 
     #Levels breakdown
-elif Option == "levels":
+elif Option == "levels" or "level":
     print("Levels selected.")
 
     #while Option == "levels":
