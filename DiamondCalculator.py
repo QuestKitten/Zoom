@@ -20,7 +20,7 @@ if Option == "diamonds" :
 
     while Option == "diamonds":
         
-            DiamondInput = int(input("How many are you looking to obtain? (Please enter a whole number): "))
+            DiamondInput = int(input("How many diamonds are you looking to obtain? (Please enter a whole number): "))
             if DiamondInput <= -1:
                 print("What the hell are you doing?\nJust give away your diamonds you fool.")
                 Diamonds = DiamondInput
@@ -118,8 +118,31 @@ if Option == "diamonds" :
 elif Option == "levels" or "level":
     print("Levels selected.")
 
-    #while Option == "levels":
+    while Option == "levels":
+        LevelInput = int(input("How many levels are you looking to obtain? (Please enter a whole number): "))
+        if LevelInput <= -1:
+                print("What the hell are you doing?\nThat isn't even possible you fool.")
+                Levels = LevelInput
+                continue
 
+            elif LevelInput <= 15:
+                print("I see, a small goal...")
+                Levels = LevelInput
+                break
+
+            elif LevelInput <= 50:
+                print("Wonderful, a goal worth working towards!")
+                Levels = LevelInput
+                break
+
+            elif LevelInput >= 51:
+                print("Holy cheese sticks! WHAT DO YOU EVEN NEED THAT MANY FOR?! \nI believe I will be needing more coffee before we continue...\n. . .\nOkay, let's continue.")
+                Levels = LevelInput
+                break
+
+            #same as line 72 and line 110
+            elif:
+                print("How did you manage to break the code this bad...")
 
 
 
